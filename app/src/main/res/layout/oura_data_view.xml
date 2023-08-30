@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OuraDisplay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+
+           >
+           <TextView
+               android:layout_width="100dp"
+               android:layout_height="match_parent"
+               android:id="@+id/text_avg_hr"
+               android:text="Avg HR"
+               android:textAlignment="center"
+               android:textSize="20dp"
+               android:textColor="#000000">
+
+           </TextView>
+
+           <TextView
+               android:layout_width="100dp"
+               android:layout_height="match_parent"
+               android:id="@+id/text_avg_hrv"
+               android:text="Avg HRV"
+               android:textAlignment="center"
+               android:textSize="20dp"
+               android:textColor="#000000">
+
+
+           </TextView>
+
+           <TextView
+               android:layout_width="100dp"
+               android:layout_height="match_parent"
+               android:id="@+id/text_sleepscore"
+               android:text="Sleep Score"
+               android:textAlignment="center"
+               android:textSize="20dp"
+               android:textColor="#000000">
+
+
+           </TextView>
+
+           <TextView
+               android:layout_width="100dp"
+               android:layout_height="match_parent"
+               android:id="@+id/text_readiness"
+               android:text="Readiness"
+               android:textAlignment="center"
+               android:textSize="20dp"
+               android:textColor="#000000">
+
+           </TextView>
+
+
+       </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginVertical="50dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="1dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginEnd="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/avg_hr"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="56"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="20dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="1dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginEnd="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/avg_hrv"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:text="56"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="1dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginEnd="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/sleep_score"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:text="56"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="1dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginEnd="0dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/readiness"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:text="56"/>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+        <ListView
+            android:id="@+id/oura_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_view" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
